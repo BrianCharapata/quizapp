@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    background: url('img/landscape.jpg');
+    background-size: fixed;
+    color: #363946;
+}
+/*header styling*/
+header {
+    width: 100%;
+    padding: 30px 0;
+    color: #ffffff;
+    font-size: 25px;
+}
+/* Clearfix */
+header::before,
+header::after {
+    display: table;
+    content: '';
+}
+header::after {
+    clear: both;
+}
+legend {
+    font-size: 20px;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background-color: #0B6122;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+.col-4,
+.col-8 {
+    padding-left: 1.04166666%;
+    padding-right: 1.04166666%;
+}
+.col-4 {
+    width: 33.33%;
+    float: left;
+}
+.col-8 {
+    width: 33.33%;
+    float: right;
+}
+.leftTitle, .countTitle{
+    padding: 10px 20px;
+    list-style: none;
+    font-size: 25px;
+    text-transform: uppercase;
+    display: inline;
+    background-color: #0B6122;
+    border-radius: 30px;
+    text-align: left;
+    color: white;
+    margin-top: 0px;
+}
+.leftTitle {
+    text-align: left;
+    position: absolute;
+}
+.countTitle {
+    text-align: right;
+    position: absolute;
+    right: 10px;
+}
+/*Quiz start screen styling*/
+.quizStart {
+    display: block;
+    text-align: center;
+    width: 60%;
+    margin-top: 150px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: normal;
+    background-color: #0B6122;
+    border-radius: 30px;
+
+}
+button {
+    padding: 15px;
+    border: none;
+    background-color:  #0B6122;
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 8px;
+}
+button:hover, button:focus {
+    background-color: #38A9AF;
+    color: #000000;
+/*    color: #ebca52; */
+}
+main div {
+    margin: 0 auto;
+}
+label:nth-child(2) {
+    background-color: #3866AF;
+}
+label:nth-child(3) {
+    background-color: #387AAF;
+}
+label:nth-child(4) {
+    background-color: #3894AF;
+}
+label:nth-child(5) {
+    background-color: #38A9AF;
+}
+label {
+    padding: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    line-height: 22px;
+    border-radius: 30px;
+}
+label:hover, label:focus {
+    background-color: #AF6438
+}
+fieldset {
+    border: none;
+}
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ffffff;
+    transition: 0.2s all linear;
+    outline: none;
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+}
+input:checked {
+    border: 8px solid #ebca52;
+}
+input[type=radio] {
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+h2 {
+    text-align: left;
+    margin-bottom: 40px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #0B6122;
+    border-radius: 30px;
+    padding: 15px;
+}
+form button {
+    padding: 20px;
+    border: none;
+    background-color: #ebca52;
+    color: #363946;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    width: 100%;
+    text-align: left;
+}
+form button:hover, form button:focus {
+    background-color: #363946;
+    color: #000000;
+}
+.answer {
+    flex: 1 1 auto;
+}
+.questionAnswerForm {
+    display: block;
+    width: 50%;
+    margin-top: 70px;
+}
+
+.quizQuestions {
+    display: none;
+}
+
+/* Styles for the Answer Box */
+.correctFeedback {
+    display: none;
+    margin: 0 auto;
+    text-align: center;
+    background: linear-gradient(to bottom, 
+        rgba(245, 255, 255, 1) 0%, rgba(124, 225, 230, 1) 100%);
+    padding-top: 40px;
+    border-radius: 0%;
+}
+.correctFeedback button {
+    width: 60%;
+}
+.correctFeedback p {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.correctFeedback span {
+    color: #000000;
+}
+.correctFeedback img {
+    width: 150px;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+    background-color: #38A9AF;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+/* End Answer Box */
+
+.addInfo {
+    width: auto;
+    height: auto;
+    display: block;
+    color: #ffffff;
+    background-color: #d49977;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #AF6438;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.results {
+    display: none;
+    margin: 0 auto;
+    text-align: center;
+    background: linear-gradient(to bottom, 
+        rgba(245, 255, 255, 1) 0%, rgba(124, 225, 230, 1) 100%);
+    padding-top: 20px;
+    border-radius: 0%;
+}
+.results button {
+    width: 60%;
+}
+.results p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.results span {
+    color: #000000;
+}
+.results img {
+    width: 150px;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+    background-color: #38A9AF;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.results p:first-of-type {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.restartButton {
+    margin-top: 40px;
+}
+@media screen and (max-width: 1190px) {
+    body {
+        background-position: 50%;
+    }
+    .questionAnswerForm,
+    .quizStart {
+        width: 80%;
+        margin-bottom: 100px;
+    }
+}
+@media screen and (max-width: 768px) {
+    body {
+        background-position: 50%;
+    }
+    legend {
+        font-size: 12px;
+        padding: 5px 10px;
+        border-radius: 10px;
+        margin-bottom: 5px;
+    }   
+    button {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .col-4,
+    .col-8 {
+        width: 100%;
+    }
+    header {
+        padding: 4px;
+    }
+    .leftTitle, .countTitle {
+        margin: 2px 10px;
+        background-color: #0B6122;
+        border-radius: 10px;
+        padding: 2px 2px;
+        text-align: center;
+        font-size: 17px;  
+        display: block;
+        position: static;   
+    }
+    h1 {
+        font-size: 20px;
+        padding:10px;
+    }
+    .submitButton {
+        font-size: 13px;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 5px;
+    }
+    .startButton {
+        border-radius: 10px;
+    }
+    .results img {
+        margin-bottom: 10px;
+    }
+    .results p {
+        padding-top: 5px;
+        line-height: 20px;
+        font-size: 15px;
+    }
+    .results p:first-of-type {
+        font-size: 15px;
+    }
+    .addInfo {
+        font-size: 13px;
+    }
+    .nextButton {
+        margin-top: 0px;
+        border-radius: 10px;
+    }
+    .correctFeedback {
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    .correctFeedback img {
+        width: 100px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .correctFeedback p {
+        font-size: 16px;
+        margin: 0 15px;
+    }
+    .banner {
+        margin-bottom: 10px;
+    }
+    .quizStart {
+        width: 100%;
+        padding: 40px;
+        margin-top: 0;
+    }
+    h2 {
+        margin-bottom: 10px;
+        font-size: 12px;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 5px;
+    }
+    .questionAnswerForm {
+        width: 100%;
+        padding: 20px;
+        padding-top: 5px;
+        margin-top: 0;
+    }
+    label {
+        font-size: 12px;
+        padding: 5px;
+        border-radius: 10px;
+        line-height: 15px;
+        margin-bottom: 4px;
+    }
+    h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .restartButton {
+        margin-top: 10px;
+        border-radius: 10px;
+        margin-bottom: 5px;
+        padding: 15px;
+        font-size: 15px;
+    }
+    .endComment {
+        font-size: 12px;
+    }
+}

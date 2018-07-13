@@ -1,0 +1,45 @@
+main {
+	init score to 0
+	init questionNumber to 1
+	init totalQuestions to call count array elements
+
+	call start
+	call body
+	call ending
+}
+
+start {
+	do start page event click {
+		hide start page html
+		push question html to DOM
+		display question html
+	}
+}
+
+body {
+
+	do question event click {
+		hide question html
+		show answer html
+	{
+
+	do answer event click {
+		hide answer html
+		if questionNumber != totalQuestions {
+			show question html
+		} else {
+			hide answer html
+			push ending html to DOM
+			display ending html
+		}
+	}
+}
+
+ending {
+
+	do ending (restart) event click {
+		hide ending html
+		set questionNumber to 1
+		show question html
+	}
+}
