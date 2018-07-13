@@ -108,16 +108,16 @@ main div {
     margin: 0 auto;
 }
 label:nth-child(2) {
-    background-color: #3866AF;
+    background-color: #05398c
 }
 label:nth-child(3) {
-    background-color: #387AAF;
+    background-color: #0071cc;
 }
 label:nth-child(4) {
-    background-color: #3894AF;
+    background-color: #024d63;
 }
 label:nth-child(5) {
-    background-color: #38A9AF;
+    background-color: #068b92;
 }
 label {
     padding: 20px;
