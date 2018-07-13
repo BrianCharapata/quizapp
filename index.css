@@ -108,7 +108,7 @@ main div {
     margin: 0 auto;
 }
 label:nth-child(2) {
-    background-color: #05398c
+    background-color: #05398c;
 }
 label:nth-child(3) {
     background-color: #0071cc;
